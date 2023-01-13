@@ -1,0 +1,231 @@
+/* *{outline: 1px dotted red;} */
+
+body{
+    margin: 0px;
+    color: white;
+    /* background: linear-gradient(to right bottom, #00126c, #4a5177, #7b5a5a, #7f0000); */
+    animation: body 25s linear infinite;
+  }
+  
+@keyframes body {
+    0% {
+      background-color: #00126c;
+    }
+    25% {
+      background-color: #4a5177;
+    }
+    /* 35% {
+      background-color: #7b5a5a;
+    } */
+    50% {
+      background-color: #7f0000;
+    }
+    75% {
+      background-color: #7b5a5a;;
+    }
+    /* 80%{
+      background-color: #4a5177;
+    } */
+    100%{
+      background-color: #00126c;
+    }
+}
+
+main{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+  
+/* Section 1 */
+#section1 {
+    margin: 30px 0px 30px 30px;
+    height: auto;
+    /* background-color: #39445a;
+    background: linear-gradient(to right,#002e89,#315eb9,#6788c9); */
+    color: white;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.65),
+     -10px -10px 20px rgba(255, 255, 255, 0.65);
+}
+/* img Phtoto en Glassmorphisme */
+img {
+    display: block;
+    margin: 20px auto;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px 5px rgba(0, 0, 0, 0.65);
+    filter: blur(15px);
+    order: 2px dotted red;
+}
+img:hover {
+    filter: blur(0px);
+}
+
+h1{
+    text-align: center;
+    margin-top: 35px;
+}
+#div_profil{
+    margin-left: 30px;
+    font-size: 18px;
+}
+#numtel{
+    width: 120px;
+    filter: blur(4px);
+    border: 2px solid red;
+}
+#numtel:hover{
+    filter: blur(0px);
+}
+a{
+    font-size: 20px;
+    animation: a 25s linear infinite;;
+}
+@keyframes a {
+    0%{
+        color: rgb(0, 220, 220);
+    }
+    50%{
+        color: rgb(255, 166, 0);
+    }
+    100%{
+        color: rgb(0, 177, 177);
+    }
+}
+#qrcode{
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    align-content: center;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px 15px rgba(0, 0, 0, 0.65),
+     inset -10px -10px 20px rgba(255, 255, 255, 0.65);
+
+}
+
+/* Section 2 */
+
+/* Section 2 - Partie 1 : Profile Pre */
+#section2 {
+    margin: 30px 20px 30px 50px;
+    height: auto;
+    width: 70%;
+}
+#h2dev{
+    margin: 0px auto;
+    padding: 10px 0px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.65), -5px -6px 6px rgba(255, 255, 255, 0.3);
+    opacity: 0.5;
+}
+/* h2 : en neumorphisme
+#h2dev{
+    margin: 0px auto;
+    padding: 10px 0px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.65),
+    -5px -5px 10px 5px rgba(255, 255, 255, 0.65);
+} */
+h2{
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+
+    color: #000000;
+    ext-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+
+    text-shadow: 10px 10px 8px rgba(0, 0, 0, 0.65), -4px -4px 3px rgb(255, 255, 255);
+} 
+
+/* Section 2 - Partie 2 : provisoir pour Comp */
+section{
+    overflow: hidden;
+}
+#boxcomp {
+    display: flex;
+    margin: 50px auto;
+    height: 100px;
+    border: 2px dotted red;
+    animation: boxcomp 14s infinite ease-in-out;
+}
+.slides {
+    flex-shrink: 0;
+    width: 100%;
+    border: 2px dotted blue;
+}
+.slides>p {
+    margin: 12px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 8px 5px 3px rgba(0,0,0,0.5);
+  
+}
+.barcompA {
+    height: 25px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 10px 10px 8px 5px rgba(0, 0, 0, 0.5), -10px -10px 10px rgba(255, 255, 255, 0.5);
+    border: 2px solid orange;
+    border-radius: 13px;
+    background-color: grey;
+}
+.barcompBA{
+    height: 25px;
+    border-radius: 13px;
+    box-shadow:inset 10px 10px 8px 5px rgba(0, 0, 0, 0.5),inset -10px -10px 8px 3px rgba(255, 255, 255, 0.3);
+    background-color: darkblue;
+}
+#barcompB1 {
+    width: 70%;
+}
+#barcompB2 {
+    width: 70%;
+}
+#barcompB3 {
+    width: 25%;
+}
+#barcompB4 {
+    width: 35%;
+}
+#barcompB5 {
+    width: 30%;
+}
+#barcompB1 {
+    width: 75%;
+}
+  
+
+@keyframes boxcomp {
+    0%,
+    15% {
+        transform: translateX(0);
+    }
+      20%,
+      35% {
+        transform: translateX(-100%);
+    }
+    40%,
+    55% {
+        transform: translateX(-200%);
+    }
+    60%,
+    75% {
+        transform: translateX(-300%);
+    }
+    80%,
+    95% {
+        transform: translateX(-400%);
+    }
+    100% {
+    transform: translateX(-500%);
+    }
+}
+
+/* Section 2 - Partie 3 : Formation & Certification */
+/* Section 2 - Partie 4 : Exp & form(sect sep che pas) */
